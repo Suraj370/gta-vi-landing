@@ -1,15 +1,10 @@
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/all';
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
-import NavBar from './sections/NavBar';
-import Hero from './sections/Hero';
-import FirstVideo from './sections/FirstVideo';
-import Jason from './sections/Jason';
-import SecondVideo from './sections/SecondVideo';
-import Lucia from './sections/Lucia';
-import PostCard from './sections/PostCard';
-import Final from './sections/Final';
-import Outro from './sections/Outro';
+import NavBar from "./sections/NavBar";
+import Hero from "./sections/Hero";
+import FirstVideo from "./sections/FirstVideo";
+import Jason from "./sections/Jason";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -19,9 +14,10 @@ const App = () => {
       <NavBar />
       <Hero />
 
-
+      <FirstVideo />
+      <Jason />
     </main>
-  )
-}
+  );
+};
 
-export default App
+export default App;
